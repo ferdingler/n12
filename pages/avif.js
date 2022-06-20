@@ -28,3 +28,10 @@ export default function AVIF() {
     </>
   );
 }
+
+export const getServerSideProps = (context) => {
+  console.log(context.req.headers);
+  return {
+    props: {}
+  };
+}
